@@ -1,0 +1,686 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap");
+@import "./navbar.css";
+@import "./footer.css";
+@import "./animation.css";
+@import "./about-img.css";
+@import "./arthmanthan.css";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #172026;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 950px) {
+  h1 {
+    text-align: left !important;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h5 {
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #172026, 0 0 0.2em black;
+}
+/* <!---------------- Banner ----------------> */
+
+.banner-section {
+  height: 100vh;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 1.6rem;
+  margin: 0 10px;
+}
+
+.navbar .container-fluid .collapse ul li {
+  text-align: right;
+  justify-content: right;
+  font-weight: 600;
+}
+
+.navbar .container-fluid .collapse ul li .d-flex {
+  justify-content: right;
+}
+
+.navbar .navbar-toggler {
+  margin-top: 15px;
+}
+
+.navigation {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation .nav-link {
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+.navbar .container-fluid .collapse .navbar-nav ul li {
+  list-style: none;
+}
+
+.navbar .container-fluid .collapse ul li .d-flex {
+  justify-content: right;
+}
+
+@media (max-width: 760px) {
+  .navigation .nav-link span {
+    display: none;
+  }
+}
+
+/* <!---------------- ABOUT ----------------> */
+@media (max-width: 500px) {
+  .about-section p {
+    font-size: 0.8rem;
+  }
+}
+
+.about-section h1 {
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+/* <!---------------- ACE OF SPADE ----------------> */
+.ace-section {
+  margin-top: 0;
+  color: #f8f8f8;
+  background-color: #172026;
+  background-image: url("../img/landing-page/ace.jpg");
+  background-size: cover;
+}
+
+.ace-section h1.text-center {
+  font-size: 4rem;
+  padding-top: 1em;
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+@media (max-width: 768px) {
+  .ace-section h1.text-center {
+    font-size: 3rem;
+    text-align: left !important;
+  }
+}
+
+.ace-section h1:last-child {
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+.ace-section p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: justify;
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+.ace-section button {
+  margin-bottom: 1em;
+}
+
+/* <!---------------- DOCUMENTARY ----------------> */
+.documentary-section {
+  margin-top: 1em;
+  color: #f8f8f8;
+  background-color: #172026;
+  background-image: url("../img/landing-page/documentary.jpg");
+  background-size: cover;
+}
+
+.documentary-section h1 {
+  padding-top: 1em;
+  font-size: 4rem;
+  margin-bottom: 0.5em;
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+@media (max-width: 768px) {
+  .documentary-section h1 {
+    font-size: 2.5rem;
+    text-align: left !important;
+  }
+}
+
+.documentary-section p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: justify;
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+.documentary-section button {
+  margin-bottom: 1em;
+}
+
+/* <!---------------- FOOTER ----------------> */
+
+
+/* <!---------------- Arthmanthan ----------------> */
+
+.arthmanthan-section {
+  margin-top: 2em !important;
+}
+
+/*Fonts*/
+/*Custom Properties*/
+:root {
+  --book-bg-color: #bda372;
+  --book-text-color: white;
+  --book-title-color: #9c7c5c;
+  --spine-border-color: #162031;
+
+  --bg-color: white;
+  --button-bg-color: white;
+  --button-text-color: #25344e;
+  --button-shadow-color: #9c7c5c;
+
+  --bg-transition: background 0.5s;
+  --text-transition: color 0.7s;
+  --outline-transition: outline 0.3s; /*breaks the other transitions :/*/
+
+  --spine-border-length: 0.13rem;
+  --book-border-length: 0rem;
+
+  --cover-effect: normal;
+  --back-blend-mode: normal;
+  --title-text-shadow: none;
+
+  --grid-columns: 30rem;
+  --book-display: grid;
+  --back-display: none;
+  --spine-display: none;
+  --book-column: 1;
+  --button-column: 1;
+}
+
+/*alternative colour palette for the container to be switched with JS*/
+.alternative {
+  --book-bg-color: white;
+  --book-text-color: #25344e;
+  --book-title-color: #9c7c5c;
+  --spine-border-color: #162031;
+
+  --spine-border-length: 0rem;
+  --book-border-length: 0.13rem;
+
+  --cover-effect: grayscale(100%);
+}
+
+.blurb {
+  --grid-columns: 30rem 4rem 30rem;
+  --back-display: grid;
+  --spine-display: flex;
+  --book-column: 3;
+  --button-column: 1/4;
+  --back-blend-mode: multiply;
+  --title-text-shadow: 0.3rem 0.3rem #9ebbb4;
+}
+
+.wrapper {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.author {
+  color: #9c7c5c;
+  text-align: center;
+}
+.book-container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: var(--grid-columns);
+  grid-template-rows: 3;
+  transition: 5s;
+}
+
+.book {
+  justify-self: center;
+  background-color: #f8f8f8;
+  background-image: url("../img/Arthmanthan.jpg");
+  background-size: cover;
+  background-attachment:scroll;
+  margin-bottom: 1em !important;
+  padding-bottom: 1em !important;
+  display: var(--book-display); /*to make it responsive*/
+  align-items: center;
+  justify-content: center;
+  grid-column: var(--book-column);
+}
+
+/* .author {
+  color: var(--book-text-color);
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+  margin-left: 0.2rem;
+} */
+
+.title {
+  margin: 0;
+  color: var(--book-title-color);
+  text-align: center;
+  justify-self: center;
+  letter-spacing: 0.25rem;
+  font-weight: 800 !important;
+  font-size: 2rem !important;
+}
+.book img {
+  max-width: 15rem;
+  justify-self: center;
+  padding: 0.5rem;
+  border: 0.2rem solid var(--book-text-color);
+  margin-bottom: 2rem;
+}
+.backCover {
+  width: 30rem;
+  height: 40rem;
+  background-color: var(--book-bg-color);
+  display: var(--back-display);
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 1;
+  overflow: hidden;
+}
+
+.blurbText {
+  color: var(--book-text-color);
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  word-spacing: 0px;
+  word-break: none;
+  hyphens: manual;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1.2rem;
+}
+
+.blurbText:first-of-type {
+  margin-top: 2.5rem; /*align it closer to the title. Not the best way*/
+}
+
+.blurbText:first-of-type::first-letter {
+  font-size: 2rem;
+  float: left;
+  line-height: 2rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.backCover img {
+  max-width: 15rem;
+  justify-self: center;
+  align-self: center;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  filter: var(--cover-effect);
+  transition: filter 1s;
+  mix-blend-mode: var(--back-blend-mode);
+}
+
+.secondWord {
+  letter-spacing: 0.38rem;
+}
+
+.blurbButton {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  margin: 2rem;
+  box-shadow: 0.2rem 0.2rem 0 var(--button-bg-color),
+    0.5rem 0.5rem 0 var(--book-title-color);
+  border: 0.2rem solid var(--button-text-color);
+  border-radius: 0.2rem;
+  padding: 0.7rem;
+  transition: 0.5s;
+  justify-self: center;
+  grid-column: var(--button-column);
+  grid-row: 2;
+}
+
+.blurbButton:hover {
+  color: var(--button-bg-color);
+  background-color: var(--button-text-color);
+  box-shadow: 0.2rem 0.2rem 0 var(--button-bg-color),
+    0.5rem 0.5rem 0 var(--book-title-color),
+    0.7rem 0.7rem 0 var(--button-bg-color), 1rem 1rem 0 var(--button-text-color);
+  transition: 0.5s;
+}
+
+.blurbButton:active {
+  color: #9ebbb4;
+  transition: none;
+}
+
+.altCoverButton {
+  grid-row: 3;
+  margin-top: 0rem;
+  display: none;
+}
+
+::selection {
+  background-color: #9ebbb4;
+  color: white;
+}
+
+/*Transitions*/
+.book,
+.backCover,
+.spine {
+  transition: var(--bg-transition);
+}
+
+.author,
+.title {
+  transition: var(--text-transition);
+}
+
+.lastWord {
+  transition: 1s;
+}
+
+.book,
+.backCover {
+  outline: var(--book-border-length) solid var(--spine-border-color);
+}
+
+.spine {
+  outline: var(--book-border-length) solid var(--spine-border-color);
+}
+
+.book .lastWord {
+  text-shadow: var(--title-text-shadow);
+}
+
+/*reminder to add minmax to the covers(?)*/
+
+/*Making it responsive*/
+@media screen and (max-width: 1000px) and (min-height: 1000px),
+  (max-width: 760px) and (max-height: 1000px) {
+  .blurb {
+    --spine-display: none;
+    --grid-columns: 30rem;
+    --back-display: grid;
+    --book-column: 1;
+    --button-column: 1/4;
+    --book-display: none;
+  }
+}
+
+@media screen and /*(max-width: 500px), */ (max-height: 1000px) {
+  .blurb {
+    --grid-columns: calc(30rem / 1.4);
+    --title-text-shadow: calc(0.3rem / 1.4) calc(0.3rem / 1.4) #9ebbb4;
+  }
+
+  .book {
+    width: calc(30rem / 1.4);
+    height: calc(40rem / 1.4);
+  }
+
+  /*  For mobile devices  */
+  @media screen and (max-width: 500px) {
+    .book-container {
+      min-width: 50%; /*this works!*/
+      grid-template-columns: none;
+    }
+  }
+  .book-container {
+    grid-template-columns: none;
+  }
+
+  .author {
+    font-size: calc(1.25rem / 1.4);
+    letter-spacing: calc(0.2rem / 1.4);
+    margin-left: calc(0.2rem / 1.4);
+  }
+
+  .title {
+    font-size: calc(2rem / 1.4);
+    letter-spacing: calc(0.25rem / 1.4);
+    font-weight: calc(500 / 1.4);
+  }
+
+  .lastWord {
+    font-size: calc(4rem / 1.4);
+    letter-spacing: calc(2.9rem / 1.4);
+    margin-left: calc(2.9rem / 1.4);
+    font-weight: calc(700 / 1.4);
+  }
+
+  .book img {
+    max-width: calc(15rem / 1.4);
+    padding: calc(0.5rem / 1.4);
+    border: calc(0.2rem / 1.4) solid var(--book-text-color);
+    margin-bottom: calc(2rem / 1.4);
+  }
+  .backCover {
+    width: calc(30rem / 1.4);
+    height: calc(40rem / 1.4);
+  }
+
+  .blurbText {
+    font-size: calc(0.8rem / 1.4);
+    letter-spacing: calc(0.1rem / 1.4);
+    /*     line-height: calc(1.5 / 1.4); */
+    margin-left: calc(2rem / 1.4);
+    margin-right: calc(2rem / 1.4);
+    margin-top: calc(1.2rem / 1.4);
+  }
+
+  .blurbText:first-of-type {
+    margin-top: calc(
+      2.5rem / 1.4
+    ); /*align it closer to the title. Not the best way*/
+  }
+
+  .blurbText:first-of-type::first-letter {
+    font-size: calc(2rem / 1.4);
+    line-height: calc(2rem / 1.4);
+    margin-right: calc(0.2rem / 1.4);
+    margin-top: calc(0.2rem / 1.4);
+  }
+
+  .backCover img {
+    max-width: calc(15rem / 1.4);
+    padding: calc(0.5rem / 1.4);
+    margin-bottom: calc(2rem / 1.4);
+    margin-top: calc(-2rem / 1.4);
+  }
+
+  .blurbButton {
+    font-size: calc(1.25rem / 1.4);
+    letter-spacing: calc(0.1rem / 1.4);
+    margin: calc(1rem / 1.4); /*changed it to make them fit better*/
+    box-shadow: calc(0.2rem / 1.4) calc(0.2rem / 1.4) 0 var(--button-bg-color),
+      calc(0.5rem / 1.4) calc(0.5rem / 1.4) 0 var(--book-title-color);
+    border: calc(0.2rem / 1.4) solid var(--button-text-color);
+    border-radius: calc(0.2rem / 1.4);
+    padding: calc(0.7rem / 1.4);
+  }
+
+  .blurbButton:hover {
+    box-shadow: calc(0.2rem / 1.4) calc(0.2rem / 1.4) 0 var(--button-bg-color),
+      calc(0.5rem / 1.4) calc(0.5rem / 1.4) 0 var(--book-title-color),
+      calc(0.7rem / 1.4) calc(0.7rem / 1.4) 0 var(--button-bg-color),
+      calc(1rem / 1.4) calc(1rem / 1.4) 0 var(--button-text-color);
+  }
+
+  /*For laptop heights, where the spin would still be included*/
+  .spine {
+    width: calc(4rem / 1.4);
+    height: calc(40rem / 1.4);
+    border-right: var(--spine-border-length) solid var(--spine-border-color);
+    border-left: var(--spine-border-length) solid var(--spine-border-color);
+  }
+
+  .spine .title {
+    font-size: calc(1rem / 1.4);
+    line-height: calc(1.5rem / 1.4);
+    display: inline-block;
+    position: relative;
+    right: calc(1.5rem / 1.4);
+  }
+
+  .spine .title .lastWord {
+    font-size: calc(2rem / 1.4);
+    letter-spacing: calc(0.5rem / 1.4);
+    margin-top: calc(1rem / 1.4);
+    display: inline-block;
+    position: relative;
+    left: calc(0.8rem / 1.4);
+  }
+
+  .secondWord {
+    letter-spacing: calc(0.38rem / 1.4);
+  }
+}
+
+@media print {
+  .wrapper {
+    margin: 0;
+  }
+
+  .blurbButton {
+    display: none;
+  }
+
+  .title {
+    color: var(--book-bg-color);
+  }
+
+  .book {
+    outline: 0.13rem solid var(--spine-border-color);
+  }
+
+  @page {
+    size: landscape;
+    margin: 5mm 5mm 5mm 5mm;
+  }
+}
+
+@-moz-document url-prefix() {
+  .spine .title {
+    line-height: 0rem;
+    position: relative; /*continuing with the cheap fix*/
+    right: 0.8rem;
+  }
+  .spine .title .lastWord {
+    right: 0.8rem;
+  }
+}
+
+/* ARTHMANTHAN DESKTOP */
+
+.arthmanthan-desktop {
+  background-image: url('../img/landing-page/arthmanthan-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+
+}
+
+.arthmanthan-desktop a {
+  color: black;
+  text-decoration: underline;
+}
+.arthmanthan-desktop a:visited {
+  color: black;
+}
+
+.arthmanthan-desktop h1 {
+  font-size: 4rem;
+  margin: 1em;
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+.arthmanthan-desktop p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: justify;
+  text-shadow: 1px 1px 2px #172026, 0 0 1em #172026, 0 0 0.2em black;
+}
+
+@media (max-width: 770px) {
+  .arthmanthan-desktop .thumbnail {
+    display: flex;
+    justify-content: center;
+  }
+  .caption {
+    text-align: center;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+.book-heading {
+  font-weight: bold;
+}
+.wiki-cite {
+  margin: 1px;
+  font-size: 12px;
+  float: right;
+}
+
+.arthmanthan-desktop .thumbnail img {
+  width: 200px;
+}
+
+@media (min-width: 560px) {
+  .wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 559px) {
+  .arthmanthan-desktop {
+    display: none;
+  }
+}

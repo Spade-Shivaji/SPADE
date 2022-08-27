@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap");
+@import "./navbar.css";
+@import "./footer.css";
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #eeeeee;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+@media (max-width: 950px) {
+  h1 {
+    text-align: left !important;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+ br {
+	margin: 50px;
+ }
+/* <!---------------- NAVBAR ----------------> */
+.navbar .container-fluid .collapse .navbar-nav .nav-link {
+  color: #000 !important;
+  font-size: 1.4rem;
+  margin: 0 10px;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-link:hover {
+  color: #f18806 !important;
+}
+
+.navbar .container-fluid .collapse ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.navbar .container-fluid .collapse ul li {
+  text-align: right;
+  justify-content: right;
+  font-weight: 600;
+}
+
+.navbar .container-fluid .collapse .d-flex {
+  justify-content: right;
+}
+
+.navbar .navbar-toggler {
+  margin-top: 15px;
+}
+
+.blog-section {
+  margin-top: 1.5em;
+}
+
+#moreText {
+	display: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	/* padding: 0; */
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#para {
+	margin-top: 100px !important;
+}
+
+.hide {
+  display: none;
+}
+
+.description button{
+  cursor: pointer;
+  padding: 10px;
+  color: #ffffff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+/* ------------------------BLOGS CARD-------------------------- */
+/*PEN STYLES*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.news-snip {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.news-snip * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.news-snip img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.news-snip .date {
+  position: absolute;
+  background-color: #1e1e1e;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 25px 0;
+  text-align: right;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+.news-snip .date:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 400px 55px 0;
+  border-color: transparent #1e1e1e transparent transparent;
+}
+.news-snip .description {
+  width: 100%;
+  background-color: #141414;
+  padding: 0 25px 25px;
+  position: relative;
+}
+.news-snip .description:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.news-snip .description a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.news-snip .description a:hover {
+  opacity: 1;
+}
+.news-snip h2 {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+.news-snip p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
